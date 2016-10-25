@@ -1,9 +1,5 @@
 /**
- * =================================================================== 
- *
- *  Kards v1.0 Main Stylesheet
- *  url: styleshout.com
- *  03-01-2016
+ * ===================================================================
  *  ------------------------------------------------------------------
  *  TOC:
  *  01. webfonts and iconfonts
@@ -1106,7 +1102,7 @@ header .logo {
 	float: left;
 	margin-left: 20px;
 	margin-right: 50px;
-	margin-top: 25px;
+	margin-top: 16px;
 	position: relative;
 }
 header .logo a {
@@ -1117,10 +1113,10 @@ header .logo a {
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
-	width: 150px;
+	width: 200px;
 	height: 35px;
 	background: url("../images/logo.png") no-repeat center;
-	background-size: 92px 15px;
+	background-size: 200px 35px;
 }
 
 /**
@@ -1508,7 +1504,8 @@ header .logo a {
 	width: 9rem;
 	border-radius: 50%;
 	margin: .9rem 0 0 0;
-	float: left;
+	float: middle;
+	margin-bottom: 3.6rem;
 }
 .intro-info .lead {
 	text-align: left;
@@ -1893,7 +1890,7 @@ header .logo a {
  * ------------------------------------------------------------------
  */
 .popup-modal {
-	max-width: 550px;
+	max-width: 650px;
 	background: #FFFFFF;
 	position: relative;
 	margin: 0 auto;
@@ -2596,4 +2593,23 @@ footer .copyright span:last-child::after {
 	background: #000000;
 }
 
+/**
+ * toggle
+ * -------------------------------------------------------------------
+ */
+
+#toggle:checked ~ #expand {
+  height: auto;
+}
+#toggle:checked ~ label::before {
+  content: "-";
+}
 /*# sourceMappingURL=main.css.map */
+
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  background: url(#about);
+  color: #FFF;
+}
